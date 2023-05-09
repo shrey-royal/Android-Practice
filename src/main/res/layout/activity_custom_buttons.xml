@@ -34,4 +34,32 @@
         android:textColor="@color/white"
         android:textSize="17sp" />
 
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/b3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/b2"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="56dp"
+        android:background="@drawable/onpresschange"
+        android:text="Button"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="17sp" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/b4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/b3"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="56dp"
+        android:background="@drawable/transparent_btn"
+        android:text="Button"
+        android:textAllCaps="false"
+        android:textColor="#F63325"
+        android:textSize="17sp" />
+
 </RelativeLayout>
