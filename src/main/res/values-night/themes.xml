@@ -12,5 +12,16 @@
         <!-- Status bar color. -->
         <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
         <!-- Customize your theme here. -->
+        <item name="cardbackground">#424242</item>
+        <item name="backgroundcolor">#303030</item>
+        <item name="textcolor">#FFFFFF</item>
+        <item name="buttoncolor">#2196F3</item>
+        <item name="tintcolor">#FFFFFF</item>
+<!--        <item name="android:windowAnimationStyle">WindowAnimationTransition</item>-->
+    </style>
+
+    <style name="WindowAnimationTransition">
+        <item name="android:windowEnterAnimation">@android:anim/fade_in</item>
+        <item name="android:windowExitAnimation">@android:anim/fade_out</item>
     </style>
 </resources>

@@ -14,10 +14,13 @@
         android:theme="@style/Theme.Sunday_Practice"
         tools:targetApi="31">
         <activity
+            android:name=".Custom_Buttons"
+            android:exported="false" />
+        <activity
             android:name=".MainActivity"
             android:exported="false" />
         <activity
-            android:name=".Custom_Buttons"
+            android:name=".DarkMode"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
