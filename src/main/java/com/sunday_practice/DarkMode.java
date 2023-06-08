@@ -1,6 +1,7 @@
 package com.sunday_practice;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.app.AppCompatDelegate;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -17,23 +18,26 @@ public class DarkMode extends AppCompatActivity {
         sharedPref = new SharedPref(this);
         if(sharedPref.loadNightModeState() == true) {
             setTheme(R.style.Theme_light);
-        } else setTheme(R.style.Theme_light);
+        } else setTheme(R.style.Theme_dark);
 
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_dark_mode);
 
         mySwitch = (Switch) findViewById(R.id.mySwitch);
         if(sharedPref.loadNightModeState() == true) {
+//            AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_YES);
             mySwitch.setChecked(true);
         }
         mySwitch.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
             @Override
             public void onCheckedChanged(CompoundButton compoundButton, boolean isChecked) {
                 if(isChecked) {
+//                    AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO);
                     sharedPref.setNightModeState(true); //changing the App theme to darkMode
                     System.out.println("DarkMode Set");
                     restartApp();
                 } else {
+//                    AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_YES);
                     sharedPref.setNightModeState(false);
                     System.out.println("LightMode Set");
 
